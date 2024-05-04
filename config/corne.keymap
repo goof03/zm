@@ -17,16 +17,16 @@
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬──────┬─────┬─────┬─────┬──────╮
 // │  TAB │  B  │  É  │  P  │  O  │  È  │   │  ^  │  V W │  D  │  L  │  J  │  Z   │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ CTRL │  A  │  U  │  I  │  E  │  ;  │   │  C  │  T   │  S  │  R  │  N  │  M   │
+// │ SHFT │  A  │  U  │  I  │  E  │  ;  │   │  C  │  T   │  S  │  R  │  N  │  M   │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ SHFT │  À  │  Y  │  X  │  :  │  K  │   │  '  │  Q   │  G  │  H  │  F  │ Ç ESC│
+// │ CTRL │  À  │  Y  │  X  │  :  │  K  │   │  '  │  Q   │  G  │  H  │  F  │ Ç ESC│
 // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┴─────┴──────╯
 //                    │ GUI │ LWR │ SPC │   │ ENT │ RSE  │ ALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴──────┴─────╯
                         bindings = <
    &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &kp BP_E_GRAVE     &kp BP_CARET &mt BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
-   &kp LCTRL &kp BP_A       &kp BP_U       &kp BP_I &kp BP_E     &kp BP_SEMI        &kp BP_C     &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
-   &kp LSHFT &kp BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_COLON &kp BP_K           &kp BP_SQT   &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &mt BP_C_CEDILLA ESC
+   &kp LSHFT &kp BP_A       &kp BP_U       &kp BP_I &kp BP_E     &kp BP_SEMI        &kp BP_C     &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
+   &kp LCTRL &kp BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_COLON &kp BP_K           &kp BP_SQT   &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &mt BP_C_CEDILLA ESC
                                            &kp LGUI &mo 1        &kp BP_SPACE       &kp RET      &mo 2         &kp RALT
                         >;
                 };
@@ -35,17 +35,17 @@
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬──────┬─────┬─────┬─────┬──────╮
 // │  #   │  1  │  2  │  3  │  4  │  5  │   │  6  │  7   │  8  │  9  │  0  │  °   │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ CTRL │     │     │     │     │ BKSP│   │BKSP │ LEFT │  UP │ DOWN│ RGT │  `   │
+// │ SHFT │     │     │     │     │ BKSP│   │BKSP │ LEFT │  UP │ DOWN│ RGT │  `   │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ SHFT │     │     │     │     │     │   │     │      │     │     │     │      │
+// │ CTRL │     │     │     │     │     │   │     │      │     │     │     │      │
 // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┴─────┴──────╯
 //                    │ GUI │     │ SPC │   │ ENT │      │ ALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴──────┴─────╯
                         bindings = <
    &kp TAB   &kp BP_N1 &kp BP_N2  &kp BP_N3 &kp BP_N4 &kp BP_N5        &kp BP_N6 &kp BP_N7 &kp BP_N8 &kp BP_N9 &kp BP_N0 &kp BP_DEG
-   &bt LCTRL  &trans    &trans     &trans    &trans    &kp BSPC         &kp BSPC  &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &kp BP_GRAVE
-   &kp LSHFT &trans    &trans     &trans    &trans    &trans           &trans    &trans    &trans    &trans    &trans    &trans
-                                  &kp LGUI  &trans    &kp BP_SPACE     &kp RET  &trans   &kp RALT
+   &bt LSHFT &trans    &trans     &trans    &trans    &kp BSPC         &kp BSPC  &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &kp BP_GRAVE
+   &kp LCTRL &trans    &trans     &trans    &trans    &trans           &trans    &trans    &trans    &trans    &trans    &trans
+                                  &kp LGUI  &trans    &kp BP_SPACE     &kp RET   &trans    &kp RALT
                         >;
                 };
 
@@ -53,16 +53,16 @@
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬──────┬─────┬─────┬─────┬──────╮
 // │  $   │  "  │  «  │  »  │  (  │  )  │   │  @  │   +  │  -  │  /  │  *  │  =   │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ CTRL │     │     │     │     │ BKSP│   │BKSP │      │     │     │     │   %  │
+// │ SHFT │     │     │     │     │ BKSP│   │BKSP │      │     │     │     │   %  │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ SHFT │     │     │     │     │     │   │     │      │     │     │     │      │
+// │ CTRL │     │     │     │     │     │   │     │      │     │     │     │      │
 // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┴─────┴──────╯
 //                    │ GUI │     │ SPC │   │ ENT │      │ ALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴──────┴─────╯
                         bindings = <
    &kp BP_DLLR &kp BP_DQT &kp BP_LAQUO &kp BP_RAQUO &kp BP_LPAR &kp BP_RPAR     &kp BP_AT &kp BP_PLUS &kp BP_MINUS &kp BP_FSLH &kp BP_STAR &kp BP_EQUAL
-   &kp LCTRL   &trans     &trans       &trans       &trans      &kp BSPC        &kp BSPC  &trans      &trans       &trans      &trans      &kp BP_PRCNT
-   &kp LSHFT   &trans     &trans       &trans       &trans      &trans          &trans    &trans      &trans       &trans      &trans      &trans
+   &kp LSHFT   &trans     &trans       &trans       &trans      &kp BSPC        &kp BSPC  &trans      &trans       &trans      &trans      &kp BP_PRCNT
+   &kp LCTRL   &trans     &trans       &trans       &trans      &trans          &trans    &trans      &trans       &trans      &trans      &trans
                                        &kp LGUI     &trans      &kp SPACE       &kp RET   &trans    &kp RALT
                         >;
                 };

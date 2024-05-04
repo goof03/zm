@@ -43,7 +43,7 @@
 //                    ╰─────┴─────┴─────╯   ╰─────┴──────┴─────╯
                         bindings = <
    &kp TAB   &kp BP_N1 &kp BP_N2  &kp BP_N3 &kp BP_N4 &kp BP_N5        &kp BP_N6 &kp BP_N7 &kp BP_N8 &kp BP_N9 &kp BP_N0 &kp BP_DEG
-   &bt LSHFT &trans    &trans     &trans    &trans    &kp BSPC         &kp BSPC  &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &kp BP_GRAVE
+   &kp LSHFT &trans    &trans     &trans    &trans    &kp BSPC         &kp BSPC  &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &kp BP_GRAVE
    &kp LCTRL &trans    &trans     &trans    &trans    &trans           &trans    &trans    &trans    &trans    &trans    &trans
                                   &kp LGUI  &trans    &kp BP_SPACE     &kp RET   &trans    &kp RALT
                         >;

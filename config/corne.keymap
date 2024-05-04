@@ -27,7 +27,7 @@
    &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &kp BP_E_GRAVE     &kp BP_CARET &mt BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
    &kp LCTRL &kp BP_A       &kp BP_U       &kp BP_I &kp BP_E     &kp BP_SEMI        &kp BP_C     &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
    &kp LSHFT &kp BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_COLON &kp BP_K           &kp BP_SQT   &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &mt BP_C_CEDILLA BP_ESC
-                                           &kp LGUI &mo 1        &kp BP_SPACE       &kp RET &mo 2 &kp RALT
+                                           &kp LGUI &mo 1        &kp BP_SPACE       &kp RET      &mo 2         &kp RALT
                         >;
                 };
 
@@ -50,7 +50,6 @@
                 };
 
                 raise_layer {
-
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬──────┬─────┬─────┬─────┬──────╮
 // │  $   │  "  │  «  │  »  │  (  │  )  │   │  @  │   +  │  -  │  /  │  *  │  =   │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤

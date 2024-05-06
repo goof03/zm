@@ -10,6 +10,18 @@
 #include "keys_fr_bepo.h"
 
 
+macro(ctrl_alt, bindings = <&kp LCTRL &kp LALT>;)
+/ {
+    macros {
+      ctrl_alt: ctrl_alt {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+            = <&kp LCTRL &kp LALT>
+            ;
+          };
+      };
+  };
 
 / {
         keymap {

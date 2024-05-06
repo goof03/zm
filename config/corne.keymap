@@ -7,22 +7,24 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "keys_fr_bepo.h"
+#include "keys_fr_bepo.h
+
+
 
 / {
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-// ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬──────┬─────┬─────┬─────┬──────╮
-// │  TAB │  B  │  É  │  P  │  O  │  È  │   │  ^  │  V W │  D  │  L  │  J  │  Z   │
-// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ SHFT │  A  │  U  │  I  │  E  │  ,  │   │  C  │  T   │  S  │  R  │  N  │  M   │
-// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ CTRL │  À  │  Y  │  X  │  .  │  K  │   │  '  │  Q   │  G  │  H  │  F  │ Ç ESC│
-// ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┴─────┴──────╯
-//                    │ GUI │ LWR │ SPC │   │ ENT │ RSE  │ ALT │
-//                    ╰─────┴─────┴─────╯   ╰─────┴──────┴─────╯
+// ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
+// │  TAB │  B  │  É  │  P  │  O  │  È  │   │  ^  │ V W │  D  │  L  │  J  │  Z  │
+// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
+// │ SHFT │  A  │  U  │  I  │  E  │  ,  │   │  C  │  T  │  S  │  R  │  N  │  M  │
+// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
+// │ CTRL │  À  │  Y  │  X  │  .  │  K  │   │  '  │  Q  │  G  │  H  │  F  │Ç ESC│
+// ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────╯
+//                    │ GUI │ LWR │ SPC │   │ ENT │ RSE │ ALT │
+//                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
                         bindings = <
    &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &kp BP_E_GRAVE     &kp BP_CARET &mt BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
    &kp LSHFT &kp BP_A       &kp BP_U       &kp BP_I &kp BP_E     &kp BP_COMMA       &kp BP_C     &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
@@ -32,38 +34,39 @@
                 };
 
                 lower_layer {
-// ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬──────┬─────┬─────┬─────┬──────╮
-// │  #   │  1  │  2  │  3  │  4  │  5  │   │  6  │  7   │  8  │  9  │  0  │  °   │
-// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ SHFT │     │     │     │     │ BKSP│   │ DEL │ LEFT │  UP │ DOWN│ RGT │  `   │
-// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ CTRL │     │     │     │     │     │   │     │      │     │     │     │      │
-// ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┴─────┴──────╯
-//                    │ GUI │     │ SPC │   │ ENT │      │ ALT │
-//                    ╰─────┴─────┴─────╯   ╰─────┴──────┴─────╯
+// ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
+// │  #   │  1  │  2  │  3  │  4  │  5  │   │  6  │  7  │  8  │  9  │  0  │  °  │
+// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
+// │ SHFT │v up │prev │pause│next │ BKSP│   │ DEL │LEFT │ UP  │ DOWN│ RGT │  `  │
+// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
+// │ CTRL │v dn │mute │     │     │     │   │     │     │     │     │     │     │
+// ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────╯
+//                    │ GUI │     │ SPC │   │ ENT │     │ ALT │
+//                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
                         bindings = <
-   &kp TAB   &kp BP_N1 &kp BP_N2  &kp BP_N3 &kp BP_N4 &kp BP_N5        &kp BP_N6 &kp BP_N7 &kp BP_N8 &kp BP_N9 &kp BP_N0 &kp BP_DEG
-   &kp LSHFT &trans    &trans     &trans    &trans    &kp BSPC         &kp DEL   &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &kp BP_GRAVE
-   &kp LCTRL &trans    &trans     &trans    &trans    &trans           &trans    &trans    &trans    &trans    &trans    &trans
-                                  &kp LGUI  &trans    &kp BP_SPACE     &kp RET   &trans    &kp RALT
+   &kp TAB   &kp BP_N1    &kp BP_N2  &kp BP_N3 &kp BP_N4  &kp BP_N5        &kp BP_N6 &kp BP_N7 &kp BP_N8 &kp BP_N9 &kp BP_N0 &kp BP_DEG
+   &kp LSHFT &kp C_VOL_UP &kp C_PREV &kp C_PP  &kp C_NEXT &kp BSPC         &kp DEL   &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &kp BP_GRAVE
+   &kp LCTRL &kp C_VOL_DN &kp C_MUTE &trans    &trans     &trans           &trans    &trans    &trans    &trans    &trans    &trans
+                                     &kp LGUI  &trans     &kp BP_SPACE     &kp RET   &trans    &kp RALT
                         >;
                 };
 
+macro(ctrl_alt, bindings = <&kp LCTRL &kp LALT>;)
                 raise_layer {
-// ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬──────┬─────┬─────┬─────┬──────╮
-// │  $   │  "  │  «  │  »  │  (  │  )  │   │  @  │   +  │  -  │  /  │  *  │  =   │
-// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ SHFT │     │     │     │     │ BKSP│   │ DEL │      │     │     │     │   %  │
-// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┼─────┼──────┤
-// │ CTRL │     │     │     │     │     │   │     │      │     │     │     │      │
-// ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼──────┼─────┼─────┴─────┴──────╯
-//                    │ GUI │     │ SPC │   │ ENT │      │ ALT │
-//                    ╰─────┴─────┴─────╯   ╰─────┴──────┴─────╯
+// ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
+// │  $   │  "  │  «  │  »  │  (  │  )  │   │  @  │  +  │  -  │  /  │  *  │  =  │
+// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
+// │ SHFT │     │     │     │     │ BKSP│   │ DEL │     │     │     │     │  %  │
+// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
+// │  F1  │  F2 │  F3 │  F4 │ F5  │  F6 │   │  F7 │  F8 │  F9 │ F10 │ F11 │ F12 │
+// ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────╯
+//                    │CALT │     │ SPC │   │ ENT │     │ ALT │
+//                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
                         bindings = <
    &kp BP_DLLR &kp BP_DQT &kp BP_LAQUO &kp BP_RAQUO &kp BP_LPAR &kp BP_RPAR     &kp BP_AT &kp BP_PLUS &kp BP_MINUS &kp BP_FSLH &kp BP_STAR &kp BP_EQUAL
    &kp LSHFT   &trans     &trans       &trans       &trans      &kp BSPC        &kp DEL   &trans      &trans       &trans      &trans      &kp BP_PRCNT
-   &kp LCTRL   &trans     &trans       &trans       &trans      &trans          &trans    &trans      &trans       &trans      &trans      &trans
-                                       &kp LGUI     &trans      &kp SPACE       &kp RET   &trans    &kp RALT
+   &kp F1      &kp F2     &kp F3       &kp F4       &kp F5      &kp F6          &kp F7    &kp F8      &kp F9       &kp F10     &kp F11     &kp F12
+                                       &ctrl_alt    &trans      &kp SPACE       &kp RET   &trans    &kp RALT
                         >;
                 };
         };

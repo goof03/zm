@@ -34,9 +34,9 @@
 //                    │ GUI │ LWR │ SPC │   │ ENT │ RSE │ ALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
                         bindings = <
-   &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &kp BP_E_GRAVE ESC &kp BP_CARET &mt BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
+   &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &mt BP_E_GRAVE ESC &kp BP_CARET &mt BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
    &kp LSHFT &kp BP_A       &kp BP_U       &kp BP_I &kp BP_E     &kp BP_COMMA       &kp BP_C     &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
-   &kp LCTRL &kp BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_DOT   &kp BP_K           &kp BP_RSQ   &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &mt BP_C_CEDILLA
+   &kp LCTRL &kp BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_DOT   &kp BP_K           &kp BP_RSQ   &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &kp BP_C_CEDILLA
                                            &kp LGUI &mo 1        &kp BP_SPACE       &kp RET      &mo 2         &kp RALT
                         >;
                 };
@@ -73,7 +73,7 @@
    &kp BP_DLLR &kp BP_DQT &kp BP_LAQUO &kp BP_RAQUO &kp BP_LPAR &kp BP_RPAR     &kp BP_AT &kp BP_PLUS &kp BP_MINUS &kp BP_FSLH &kp BP_STAR &kp BP_EQUAL
    &kp LSHFT   &trans     &trans       &trans       &trans      &kp BSPC        &kp DEL   &trans      &trans       &trans      &trans      &kp BP_PRCNT
    &kp F1      &kp F2     &kp F3       &kp F4       &kp F5      &kp F6          &kp F7    &kp F8      &kp F9       &kp F10     &kp F11     &kp F12
-                                       &trans       &kp SPACE       &kp RET   &trans    &kp RALT
+                                       &ctrl_alt    &trans      &kp SPACE       &kp RET   &trans      &kp RALT
                         >;
                 };
         };

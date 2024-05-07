@@ -73,7 +73,7 @@
    &kp BP_DLLR &kp BP_DQT &kp BP_LAQUO &kp BP_RAQUO &kp BP_LPAR &kp BP_RPAR     &kp BP_AT &kp BP_PLUS &kp BP_MINUS &kp BP_FSLH &kp BP_STAR &kp BP_EQUAL
    &kp LSHFT   &trans     &trans       &trans       &trans      &kp BSPC        &kp DEL   &trans      &trans       &trans      &trans      &kp BP_PRCNT
    &kp F1      &kp F2     &kp F3       &kp F4       &kp F5      &kp F6          &kp F7    &kp F8      &kp F9       &kp F10     &kp F11     &kp F12
-                                       &ctrl_alt    &trans      &kp SPACE       &kp RET   &trans    &kp RALT
+                                       &trans       &kp SPACE       &kp RET   &trans    &kp RALT
                         >;
                 };
         };

@@ -34,10 +34,10 @@
 //                    │ GUI │ LWR │ SPC │   │ ENT │ RSE │ ALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
                         bindings = <
-   &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &mt BP_E_GRAVE ESC &kp BP_CARET &mt BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
-   &kp LSHFT &kp BP_A       &kp BP_U       &kp BP_I &kp BP_E     &kp BP_COMMA       &kp BP_C     &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
-   &kp LCTRL &kp BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_DOT   &kp BP_K           &kp BP_RSQ   &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &kp BP_C_CEDILLA
-                                           &kp LGUI &mo 1        &kp BP_SPACE       &kp RET      &mo 2         &kp RALT
+   &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &kp BP_E_GRAVE     &mt BP_CARET ESC &mt BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
+   &kp LSHFT &kp BP_A       &kp BP_U       &kp BP_I &kp BP_E     &kp BP_COMMA       &kp BP_C         &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
+   &kp LCTRL &kp BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_DOT   &kp BP_K           &kp BP_RSQ       &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &kp BP_C_CEDILLA
+                                           &kp LGUI &mo 1        &kp BP_SPACE       &kp RET          &mo 2         &kp RALT
                         >;
                 };
 
@@ -55,11 +55,11 @@
    &kp TAB   &kp BP_N1 &kp BP_N2 &kp BP_N3 &kp BP_N4  &kp BP_N5        &kp BP_N6 &kp BP_N7 &kp BP_N8 &kp BP_N9 &kp BP_N0 &kp BP_DEG
    &kp LSHFT &trans    &trans    &trans    &trans     &kp BSPC         &kp DEL   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BP_GRAVE
    &kp LCTRL &trans    &trans    &trans    &trans     &trans           &trans    &trans    &kp PG_DN &kp PG_UP &trans
-                                 &kp LGUI  &trans     &kp BP_SPACE     &kp RET   &trans    &kp RALT
+                                 &kp LGUI  &trans     &kp BP_SPACE     &kp RET   &mo 3     &kp RALT
                         >;
                 };
 
-                raise_layer {
+                raise_layerŵw {
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
 // │  $   │  "  │  «  │  »  │  (  │  )  │   │  @  │  +  │  -  │  /  │  *  │  =  │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤

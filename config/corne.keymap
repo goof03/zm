@@ -45,17 +45,17 @@
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
 // │  #   │  1  │  2  │  3  │  4  │  5  │   │  6  │  7  │  8  │  9  │  0  │  °  │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
-// │ SHFT │v up │prev │pause│next │ BKSP│   │ DEL │LEFT │DOWN │ UP  │ RGT │  `  │
+// │ SHFT │     │     │     │     │ BKSP│   │ DEL │LEFT │DOWN │ UP  │ RGT │  `  │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
-// │ CTRL │v dn │mute │     │     │     │   │     │     │ PDN │ PUP │     │     │
+// │ CTRL │     │     │     │     │     │   │     │     │ PDN │ PUP │     │     │
 // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────╯
 //                    │ GUI │     │ SPC │   │ ENT │     │ ALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
                         bindings = <
-   &kp TAB   &kp BP_N1    &kp BP_N2  &kp BP_N3 &kp BP_N4  &kp BP_N5        &kp BP_N6 &kp BP_N7 &kp BP_N8 &kp BP_N9 &kp BP_N0 &kp BP_DEG
-   &kp LSHFT &kp C_VOL_UP &kp C_PREV &kp C_PP  &kp C_NEXT &kp BSPC         &kp DEL   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BP_GRAVE
-   &kp LCTRL &kp C_VOL_DN &kp C_MUTE &trans    &trans     &trans           &trans    &trans    &kp PG_DN &kp PG_UP &trans
-                                     &kp LGUI  &trans     &kp BP_SPACE     &kp RET   &trans    &kp RALT
+   &kp TAB   &kp BP_N1 &kp BP_N2 &kp BP_N3 &kp BP_N4  &kp BP_N5        &kp BP_N6 &kp BP_N7 &kp BP_N8 &kp BP_N9 &kp BP_N0 &kp BP_DEG
+   &kp LSHFT &trans    &trans    &trans    &trans     &kp BSPC         &kp DEL   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BP_GRAVE
+   &kp LCTRL &trans    &trans    &trans    &trans     &trans           &trans    &trans    &kp PG_DN &kp PG_UP &trans
+                                 &kp LGUI  &trans     &kp BP_SPACE     &kp RET   &mo 3     &kp RALT
                         >;
                 };
 
@@ -63,18 +63,36 @@
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
 // │  $   │  "  │  «  │  »  │  (  │  )  │   │  @  │  +  │  -  │  /  │  *  │  =  │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
-// │ SHFT │     │     │     │     │ BKSP│   │ DEL │     │     │     │     │  %  │
+// │ SHFT │  &  │  <  │  >  │  [  │  ]  │   │ DEL │     │     │     │     │  %  │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
-// │  F1  │  F2 │  F3 │  F4 │ F5  │  F6 │   │  F7 │  F8 │  F9 │ F10 │ F11 │ F12 │
+// │ CTRL │  |  │  \  │  /  │  {  │  }  │   │     │     │     │     │     │     │
 // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────╯
 //                    │CALT │     │ SPC │   │ ENT │     │ ALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
                         bindings = <
-   &kp BP_DLLR &kp BP_DQT &kp BP_LAQUO &kp BP_RAQUO &kp BP_LPAR &kp BP_RPAR     &kp BP_AT &kp BP_PLUS &kp BP_MINUS &kp BP_FSLH &kp BP_STAR &kp BP_EQUAL
-   &kp LSHFT   &trans     &trans       &trans       &trans      &kp BSPC        &kp DEL   &trans      &trans       &trans      &trans      &kp BP_PRCNT
-   &kp F1      &kp F2     &kp F3       &kp F4       &kp F5      &kp F6          &kp F7    &kp F8      &kp F9       &kp F10     &kp F11     &kp F12
-                                       &ctrl_alt    &trans      &kp SPACE       &kp RET   &trans      &kp RALT
+   &kp BP_DLLR &kp BP_DQT  &kp BP_LAQUO &kp BP_RAQUO &kp BP_LPAR &kp BP_RPAR    &kp BP_AT &kp BP_PLUS &kp BP_MINUS &kp BP_FSLH &kp BP_STAR &kp BP_EQUAL
+   &kp LSHFT   &kp BP_AMPS &kp BP_LT    &kp BP_GT    &kp BP_LBKT &kp BP_RBKT    &kp DEL   &trans      &trans       &trans      &trans      &kp BP_PRCNT
+   &kp LCTRL   &kp BP_PIPE &kp BP_BSLH  &kp BP_FSLH  &kp BP_LBRC &kp BP_RBRC    &trans    &trans      &trans       &trans      &trans      &trans
+                                        &kp LGUI     &trans      &kp SPACE       &kp RET   &trans      &kp RALT
                         >;
+                
+                functional_layer { 
+// ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
+// │  F1  │  F2 │  F3 │  F4 │ F5  │  F6 │   │  F7 │  F8 │  F9 │ F10 │ F11 │ F12 │
+// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
+// │ SHFT │v up │prev │pause│next │ BKSP│   │ DEL │LEFT │DOWN │ UP  │ RGT │     │
+// ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
+// │ CTRL │v dn │mute │     │     │     │   │     │     │ PDN │ PUP │     │     │
+// ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────╯
+//                    │CALT │     │ SPC │   │ ENT │     │ ALT │
+//                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
+                        bindings = <
+   &kp BP_DLLR &kp BP_DQT   &kp BP_LAQUO &kp BP_RAQUO &kp BP_LPAR &kp BP_RPAR     &kp BP_AT &kp BP_PLUS &kp BP_MINUS &kp BP_FSLH &kp BP_STAR &kp BP_EQUAL
+   &kp LSHFT   &kp C_VOL_UP &kp C_PREV   &kp C_PP     &kp C_NEXT  &kp BSPC        &kp DEL   &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT   &trans
+   &kp LCTRL   &kp C_VOL_DN &kp C_MUTE   &trans       &trans      &trans          &trans    &trans      &kp PG_DN    &kp PG_UP   &trans      &trans
+                                         &ctrl_alt    &trans      &kp SPACE       &kp RET   &trans      &kp RALT
+                        >;
+                  }
                 };
         };
 };

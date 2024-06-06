@@ -29,7 +29,7 @@
         flavor = "tap-preferred";
         quick-tap-ms = <125>;
         global-quick-tap;
-        bindings = <&kp>, <&kp>; 
+        bindings = <&kp>,<&kp>;
       };
     };
 

@@ -55,7 +55,7 @@
 //                    │ GUI │ LWR │ SPC │   │ ENT │ RSE │ ALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
          bindings = <
-   &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &kp BP_E_GRAVE     &mt BP_CARET ESC &hm BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
+   &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &kp BP_E_GRAVE     &mt BP_CARET ESC &mt BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
    &kp LSHFT &kp BP_A       &kp BP_U       &kp BP_I &kp BP_E     &kp BP_COMMA       &kp BP_C         &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
    &kp LCTRL &kp BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_DOT   &kp BP_K           &kp BP_RSQ       &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &kp BP_C_CEDILLA
                                            &kp LGUI &mo 1        &kp BP_SPACE       &kp RET          &mo 2         &kp RALT

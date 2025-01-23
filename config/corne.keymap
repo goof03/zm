@@ -23,7 +23,6 @@
     behaviors {
       hm: homerow-mods {
         compatible = "zmk,behavior-hold-tap";
-        label = "homehow-mods"f;
         #binding-cells = <2>;
         tapping-term-ms = <175>;
         flavor = "tap-preferred";
@@ -31,6 +30,28 @@
         global-quick-tap;
         bindings = <&kp>,<&kp>;
       };
+
+      slt: spacebar_layer_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "SPACE_LAYER_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <90>;
+        global-quick-tap;
+        bindings = <&mo>, <&kp>; 
+      };
+
+
+        mhm: lgui_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>; // Double tapping -> hold key
+            require-prior-idle-ms = <100>;  
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     conditional-layers {
@@ -44,7 +65,7 @@
     keymap {
       compatible = "zmk,keymap";
 
-      default_layer {
+      Bepo {
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
 // │  TAB │  B  │  É  │  P  │  O  │  È  │   │^ ESC│ V W │  D  │  L  │  J  │  Z  │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
@@ -52,35 +73,35 @@
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
 // │ CTRL │  À  │  Y  │  X  │  .  │  K  │   │  '  │  Q  │  G  │  H  │  F  │  Ç  │
 // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────╯
-//                    │ GUI │ LWR │ SPC │   │ ENT │ RSE │ ALT │
+//                    │LALT │LGUI │ SPC │   │ ENT │ RSE │RALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
          bindings = <
-   &kp TAB   &kp BP_B       &kp BP_E_ACUTE &kp BP_P &kp BP_O     &kp BP_E_GRAVE     &mt BP_CARET ESC &hm BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
-   &kp LSHFT &kp BP_A       &kp BP_U       &kp BP_I &kp BP_E     &kp BP_COMMA       &kp BP_C         &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
-   &kp LCTRL &kp BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_DOT   &kp BP_K           &kp BP_RSQ       &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &kp BP_C_CEDILLA
-                                           &kp LGUI &mo 1        &kp BP_SPACE       &kp RET          &mo 2         &kp LALT
+   &kp TAB   &kp BP_B             &kp BP_E_ACUTE &kp BP_P &kp BP_O     &kp BP_E_GRAVE     &mt BP_CARET ESC &hm BP_W BP_V &kp BP_D &kp BP_L &kp BP_J &kp BP_Z
+   &kp LSHFT &kp BP_A             &kp BP_U       &kp BP_I &kp BP_E     &kp BP_COMMA       &kp BP_C         &kp BP_T      &kp BP_S &kp BP_R &kp BP_N &kp BP_M
+   &kp LCTRL &mhm LGUI BP_A_GRAVE &kp BP_Y       &kp BP_X &kp BP_DOT   &kp BP_K           &kp BP_RSQ       &kp BP_Q      &kp BP_G &kp BP_H &kp BP_F &kp BP_C_CEDILLA
+                                                 &kp LALT &mo 1        &kp BP_SPACE       &kp RET          &mo 2         &kp RALT
          >;
       };
 
-      lower_layer {
+      Bepo_nb{
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
 // │  #   │  1  │  2  │  3  │  4  │  5  │   │  6  │  7  │  8  │  9  │  0  │  °  │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
-// │ SHFT │     │     │     │     │ BKSP│   │ DEL │LEFT │DOWN │ UP  │ RGT │  `  │
+// │ SHFT │     │     │     │ DEL │ BKSP│   │LEFT │DOWN │ UP  │ RGT │  `  │     │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
-// │ CTRL │     │     │     │     │     │   │     │     │ PDN │ PUP │     │     │
+// │ CTRL │     │     │     │     │     │   │     │HOME │ PDN │ PUP │ END │     │
 // ╰──────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────╯
-//                    │ GUI │     │ SPC │   │ ENT │     │ ALT │
+//                    │ GUI │     │ SPC │   │ ENT │     │LALT │
 //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
         bindings = <
    &kp BP_HASH &kp BP_N1 &kp BP_N2 &kp BP_N3 &kp BP_N4  &kp BP_N5        &kp BP_N6 &kp BP_N7 &kp BP_N8 &kp BP_N9 &kp BP_N0 &kp BP_DEG
-   &kp LSHFT   &trans    &trans    &trans    &trans     &kp BSPC         &kp DEL   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BP_GRAVE
-   &kp LCTRL   &trans    &trans    &trans    &trans     &trans           &trans    &trans    &kp PG_DN &kp PG_UP &trans    &trans
-                                 &kp LGUI  &trans     &kp BP_SPACE     &kp RET   &trans    &kp RALT
+   &kp LSHFT   &trans    &trans    &trans    &kp DEL    &kp BSPC         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none     &none
+   &kp LCTRL   &trans    &trans    &trans    &trans     &trans           &trans    &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans
+                                 &kp LGUI    &trans     &kp BP_SPACE     &kp RET   &studio_unlock  &kp LALT
         >;
       };
 
-      raise_layer {
+      Bepo_symb{
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
 // │  $   │  "  │  «  │  »  │  (  │  )  │   │  @  │  +  │  -  │  /  │  *  │  =  │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
@@ -98,7 +119,7 @@
         >;
       };
 
-      functional_layer {
+      Bepo_func{
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
 // │  F1  │  F2 │  F3 │  F4 │ F5  │  F6 │   │  F7 │  F8 │  F9 │ F10 │ F11 │ F12 │
 // ├──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
